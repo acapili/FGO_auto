@@ -1,8 +1,6 @@
 import subprocess
 import os
 
-from tap_cordinates import Coordinates
-
 def get_adb_path():
     return os.path.join(os.path.dirname(__file__), "tools", "adb", "adb")
 

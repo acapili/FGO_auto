@@ -1,0 +1,49 @@
+y cordinate for skills = 840
+
+This is the start of a servents skill to get to the next skill you just need to add 130
+187
+660
+1137
+
+Attack button: 1994 911
+
+battle menu: 2113, 311
+master skills: 2113, 469
+left from right:
+1850, 1929, 1980
+
+Enemies from left to right
+183 65
+556 65
+931 65
+
+hitting okay in skills
+1500 632
+
+selecting servents for skills
+690 580
+1160 580
+1630 580
+
+
+card selection
+400 725
+776
+1200
+1550
+1940
+
+noble phantasms
+830 270
+1201 270
+1552 270
+
+masters facce
+2095 97
+
+rectangle for color selection : 162 x 48
+348 815
+744
+1136
+1520
+1899
