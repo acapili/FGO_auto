@@ -32,8 +32,8 @@ class Coordinates:
         
     def get_skills_coordinates(self, id, number):
         """Returns the (x, y) coordinates for the skill tap"""
-        if id in {1, 2, 3} and number in {1, 2, 3}:
-            x = self.skills['x'][id - 1] + (number - 1) * 130
+        if id in {0, 1, 2} and number in {0, 1, 2}:
+            x = self.skills['x'][id] + (number) * 130
             y = self.skills['y']
             return (x, y)
         else:
