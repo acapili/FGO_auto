@@ -1,0 +1,25 @@
+{
+    "Turn1" :
+        {"skills": [[0,4,4], [0,4,4], [1,4,1]],
+        "battle_menu": 0,
+        "master_skills": 0 ,
+        "enemy_selection": 0,
+        "noble_phantasms": 3 ,
+        "card_selection":2},
+
+   "Turn2" :
+     {"skills": [[0,0,0], [1,0,0], [0,0,0]],
+     "battle_menu": 0,
+     "master_skills": 0 ,
+     "enemy_selection": 0,
+     "noble_phantasms": 3 ,
+     "card_selection":2},
+ 
+   "Turn3" :
+         {"skills": [[1,0,0], [0,0,0], [0,0,0]],
+         "battle_menu": 1,
+         "master_skills": 0,
+         "enemy_selection": 0,
+         "noble_phantasms": 3 ,
+         "card_selection":2}
+}

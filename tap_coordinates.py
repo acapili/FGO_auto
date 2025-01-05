@@ -1,4 +1,5 @@
-class Coordinates:
+class tap_coordinates:
+    """Data class for all of the cordinates within  a Samsung Galaxy 23+"""
     def __init__(self):
         self.skills = {'x': [187, 660, 1137], 'y': 840}
         self.okay_button = [1500, 632]
@@ -11,6 +12,9 @@ class Coordinates:
         self.servent_skill_selection = {'x': [690, 1160, 1552], 'y': 580}
         self.card_selction = {'x': [400, 776, 1200, 1550, 1940], 'y': 725}
         self.enemy_selection = {'x': [183, 556, 931], 'y': 65}
+        self.rectangle_for_colors = {'x': [330, 734, 1126, 1510, 1889], 'y': 860}
+        self.rectangle_dimensions = {'x':170, 'y': 70}
+        self.attack_button = [1994, 911]
 
 
     def get_coordinates(self, category, number):
@@ -40,8 +44,20 @@ class Coordinates:
             print("Please enter a valid ID [1-3] and number [1-3]")
             return None
         
+    def get_card_box(self, id):
+        """Returns the top left upper and right lower portions of a box (left, upper, right, lower)-tuple"""
+        if (id >= 0 and id <=4):
+            x1 = self.rectangle_for_colors['x'][id]
+            y1 = self.rectangle_for_colors['y']
+            x2 = x1 + self.rectangle_dimensions['x']
+            y2 = y1 - self.rectangle_dimensions['y']
+            return([x1, y2, x2, y1])
+        else:
+            print("Error: ID or type selection")
+            return None
+        
     def get_noble_phantasm(self, number):
-        return self.get_coordinates("servent_skill_selection", number)
+        return self.get_coordinates("noble_phantasms", number)
         
     def get_servent_skill_selection(self, number):
         return self.get_coordinates("servent_skill_selection", number)
@@ -63,4 +79,10 @@ class Coordinates:
     
     def get_masters_face(self):
         return(self.masters_face[0], self.masters_face[1])
+    
+    def get_attack_button(self):
+        return(self.attack_button[0], self.attack_button[1])
+    
+    def get_cards(self, number):
+        return self.get_coordinates("rectangle_for_colors", number)
     

@@ -4,7 +4,7 @@ import os
 def get_adb_path():
     return os.path.join(os.path.dirname(__file__), "tools", "adb", "adb")
 
-class and_int:
+class android_interface:
     # Function to capture screenshot from the Android device
     def capture_screenshot(self):
         adb = get_adb_path()
