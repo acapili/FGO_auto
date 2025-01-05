@@ -1,0 +1,1 @@
+This is a personal project that is currently utilizing python and the android debug bridge. Currently working on the ability to select cards and multithreading. From there I would like to implement the ability to select support servents and use up apples when needed.
